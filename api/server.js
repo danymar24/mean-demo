@@ -2,15 +2,16 @@ var express     = require('express');
 var app         = express();
 var bodyParser  = require('body-parser');
 var mongoose    = require('mongoose');
+var config      = require('./config');
 
 // Routes
 var UsersRouter = require('./routes/users/user-routes');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-mongoose.connect('mongodb://localhost:27017/mean-demo');
+mongoose.connect(config.MONGODB_URL);
 
-var port = process.env.PORT || 3050;
+var port = config.PORT || 3050;
 
 var router = express.Router();
 
