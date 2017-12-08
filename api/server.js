@@ -4,8 +4,7 @@ var bodyParser  = require('body-parser');
 var mongoose    = require('mongoose');
 var config      = require('./config');
 
-// Routes
-var UsersRouter = require('./routes/users/user-routes');
+var Routes      = require('./routes/routes');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -19,8 +18,9 @@ router.get('/', (req, res) => {
     res.json({ message: 'welcome to our api!'});
 });
 
-app.use('/api', router);
-app.use('/api/users', UsersRouter);
+app.use('/api', Routes);
 
 app.listen(port);
 console.log('Api running on port ' + port);
+
+module.exports = app;
