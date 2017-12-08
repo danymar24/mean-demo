@@ -2,21 +2,14 @@
 
 Just a MEAN stack demo application, this app uses Express 4 as backend, Angular CLI as front end and mongodb as Database.
 
-## Front end server
+## Run server
 
-Run `ng serve` for a front end development server.
-
-## Backend server
-
-Run `npm run server` to start the express development server.
-
-## Build
-
-Run `npm build` to build both applications.
+To run the development server run `npm start`, it will run both express and angular app.
 
 ## Todo
 
-* Add npm scripts to run both development servers
+* ~~Add npm scripts to run both development servers~~ Done
+* Add build scripts to build angular application and serve it with express
 * Add proxy to the angular application to point to the express app
 * Add a Style framework
 * Add authentication
