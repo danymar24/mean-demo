@@ -13,4 +13,7 @@ To run the development server run `npm start`, it will run both express and angu
 * Add proxy to the angular application to point to the express app
 * Add a Style framework
 * Add authentication
-* Add unit tests
+* Add unit tests to express app
+* * ~~Users~~ Done
+* * User
+* Add unit tests to angular app
