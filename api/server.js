@@ -4,7 +4,7 @@ var bodyParser  = require('body-parser');
 var mongoose    = require('mongoose');
 var config      = require('./config');
 
-var Routes      = require('./routes/routes');
+var Routes      = require('./routes');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());

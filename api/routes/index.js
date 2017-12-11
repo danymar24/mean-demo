@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 // Routes
-var UsersRouter = require('./users/user-routes');
+var UsersRouter = require('./users');
 
 router.use((req, res, next) => {
     console.log('A request has been made.');
